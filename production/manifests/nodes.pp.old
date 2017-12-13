@@ -1,0 +1,11 @@
+node 'agent1' {
+  class {'linux': }
+  class {'motd': }
+  class {'apache': }
+
+}
+
+
+node 'agent2' {
+  class {'linux': }
+}

@@ -1,0 +1,10 @@
+---
+classes:
+  - role::web
+  - role::default
+  - role::db
+
+apache::myhostname: MyProdWebServer
+apache::myipaddress: "172.31.0.201"
+apache::myoperatingsystem: CentOS-7
+apache::myenvironment: Web-Production

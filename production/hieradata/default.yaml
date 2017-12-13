@@ -1,0 +1,3 @@
+---
+apache::mypurpose: "To Show you the Power of hiera"
+apache::myname: "Amit Vashist"

@@ -1,0 +1,29 @@
+node 'agent1' {
+  $myhostname    = 'myprodweb01'
+  $myipaddress   = '172.31.0.201'
+  $myoperatingsystem = 'Cent OS -7'
+  $myenvironment = 'Production-Webserver'
+  $mypurpose     =  'To show you puppet Variable demo'
+  $myname        =  'Amit Vashist'
+
+
+  class {'linux': }
+  class {'motd': }
+  class {'apache': }
+}
+
+
+node 'agent2' {
+  $myhostname    = 'mytestweb01'
+  $myipaddress   = '172.31.0.202'
+  $myoperatingsystem = 'Ubuntu'
+  $myenvironment = 'Test-Webserver'
+  $mypurpose     =  'To show you puppet Variable demo'
+  $myname        =  'Amit Vashist'
+
+
+  class {'linux': }
+  class {'motd': }
+  class {'apache': }
+}
+
