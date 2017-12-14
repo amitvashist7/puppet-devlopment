@@ -1,0 +1,10 @@
+---
+classes:
+  - role::default
+
+apache::myhostname: Default Server
+apache::myipaddress: "I have no idea"
+apache::myoperatingsystem: "Please check by yourself"
+apache::myenvironment: "Go to HELL"
+apache::mypurpose: "To Show you the Power of hiera"
+apache::myname: "Amit Vashist"

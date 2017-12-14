@@ -1,0 +1,9 @@
+---
+classes:
+  - role::db
+
+mysqldb::mypassword: 'strongpassword'
+apache::myhostname: MyTestWebServer
+apache::myipaddress: "172.31.0.202"
+apache::myoperatingsystem: Ubuntu
+apache::myenvironment: Web-Testing
