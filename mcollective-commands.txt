@@ -1,0 +1,17 @@
+cp -rf /var/lib/peadmin/.mcollective /root/
+
+mco ping
+mco find
+mco find --with-class apache
+mco service httpd status
+mco process list httpd
+
+mco inventory agent1.example.com
+mco rpc service status service=httpd
+mco rpc service status service=httpd -I agent1.example.com
+
+mco package status kernel
+
+mco puppet runonce 
+mco puppet runonce  -I agent1.example.com
+
